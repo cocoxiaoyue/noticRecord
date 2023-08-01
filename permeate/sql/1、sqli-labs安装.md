@@ -29,6 +29,6 @@ systemctl enable mariadb && systemctl start mariadb &&mysql_secure_installation
 
  ###### 进入到sqli-labs靶机站点，点击重置数据库即可在mysql中创建了数据库
 
-![Alt text](./../../images/sql/sqli-labs-resetDatabase.png "初始化数据库")
+![Alt text](./../../images/sql/less-1/sqli-labs-resetDatabase.png "初始化数据库")
 
-![Alt text](./../../images/sql/sqli-labs-tables.png "在mysql中查询数据库是否创建")
+![Alt text](./../../images/sql/less-1/sqli-labs-tables.png "在mysql中查询数据库是否创建")

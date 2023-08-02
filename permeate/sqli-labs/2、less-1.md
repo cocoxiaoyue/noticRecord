@@ -1,4 +1,4 @@
-### 2、sqli-labs-less-1
+### 2、sqli-labs-less-1---字符型注入，基于错误的GET单引号
 
 ##### 1、访问less-1的页面
 
@@ -95,3 +95,12 @@ and:表示条件并列
 ```
 
 ![Alt text](./../../images/sql/less-1/usersInfo.png "usersInfo")
+
+
+总结：less-1的课程还是比较容易的，输入的变量id，将其进行单引号的字符包裹，参考如下sqli-labs的源码，所以注入时，对应的对单引号进行闭合
+
+```
+// connectivity less-1
+$sql="SELECT * FROM users WHERE id='$id' LIMIT 0,1";
+
+```
